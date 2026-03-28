@@ -80,13 +80,14 @@ Transcribes audio file and processes into SOAP format.
 
 **Example Requests:**
 
-```bash
-# Using default file
-curl http://localhost:3010/soap-transcribe
+# Testing on Browser/Postman
 
-# With specific filename query parameter
-curl http://localhost:3010/soap-transcribe?filename=sample_dictation.mp3
-```
+# 1. Using default file
+url- http://localhost:3010/soap-transcribe
+
+# 2. With specific filename query parameter
+url- http://localhost:3010/soap-transcribe?filename=sample_dictation.mp3
+
 
 **Response Success (200):**
 ```json
