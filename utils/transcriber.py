@@ -39,7 +39,6 @@ async def transcribe(audio_input: bytes | str, filename: str) -> dict:
             transcript = " ".join(
                 seg.text.strip() for seg in segments_iter if seg.text
             ).strip()
-            print("iam nere")
 
         except Exception:
             return {"error": "Failed while processing transcription segments"}
