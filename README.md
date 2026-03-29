@@ -28,6 +28,7 @@ pip install fastapi uvicorn faster-whisper httpx
 **Download and Install:**
 - [Download Ollama](https://ollama.ai)
 - Extract and run the installer
+- Download/Setup 'Mistral' Model on ollama
 
 **Pull the Mistral Model:**
 ```bash
