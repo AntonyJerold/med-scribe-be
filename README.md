@@ -103,8 +103,8 @@ url- http://localhost:3010/soap-transcribe?filename=sample_dictation.mp3
 **Response Success (200):**
 ```json
 {
-  transcript: "Transcribed text of the given Audio...",
-  SOAP:{
+  "transcript": "Transcribed text of the given Audio...",
+  "SOAP":{
     "Subjective": "Patient reports...",
     "Objective": "Vital signs...",
     "Assessment": "Clinical impression...",
