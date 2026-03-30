@@ -90,13 +90,26 @@ url- http://localhost:3010/soap-transcribe
 url- http://localhost:3010/soap-transcribe?filename=sample_dictation.mp3
 
 
+## ⚙️ How It Works
+1. Upload or provide an audio file  
+2. API transcribes the audio (audio-to-text) 
+3. Extracts SOAP notes using Ollama Mistral model (text-to-soap)  
+4. Saves the result in `results/` folder  
+5. Returns response in structured JSON 
+---
+
+## 📥 API Response
+
 **Response Success (200):**
 ```json
 {
-  "Subjective": "Patient reports...",
-  "Objective": "Vital signs...",
-  "Assessment": "Clinical impression...",
-  "Plan": "Treatment plan..."
+  transcript: "Transcribed text of the given Audio...",
+  SOAP:{
+    "Subjective": "Patient reports...",
+    "Objective": "Vital signs...",
+    "Assessment": "Clinical impression...",
+    "Plan": "Treatment plan..."
+  }
 }
 ```
 
